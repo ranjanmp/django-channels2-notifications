@@ -1,0 +1,12 @@
+*.pyc
+*.pyo
+*.mo
+*~
+__pycache__
+db.sqlite3
+.DS_Store
+.vscode
+media/**
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
