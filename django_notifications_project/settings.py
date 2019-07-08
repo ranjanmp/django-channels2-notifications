@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django_notifications_app' # Django Notifications App
+    'django_notifications_app' # Django Notifications App (Your App Name)
     'channels', # Added channels to Installed Apps
 ]
 
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'django_notifications_project.urls'
 
 
 # Django Channels
-ASGI_APPLICATION = "django_notifications_project.routing.application"    # project_name.routing.application
+ASGI_APPLICATION = "django_notifications_project.routing.application"    # your_project_name.routing.application
 # End Django Channels
 
 
