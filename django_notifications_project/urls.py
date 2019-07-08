@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+
+from django_notifications_app.views import home  # Importing basic home view 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", home, name="home"),
 ]
