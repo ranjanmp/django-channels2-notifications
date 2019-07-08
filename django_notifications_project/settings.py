@@ -56,7 +56,7 @@ ROOT_URLCONF = 'django_notifications_project.urls'
 
 
 # Django Channels
-ASGI_APPLICATION = "django_notifications_project.routing.application"
+ASGI_APPLICATION = "django_notifications_project.routing.application"    # project_name.routing.application
 # End Django Channels
 
 
