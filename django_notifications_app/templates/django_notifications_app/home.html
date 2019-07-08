@@ -15,6 +15,12 @@
     <body>
     <h1> Home </h1>
 
+
+    <a href="{% url 'notifications-test' %}" target="_blank"><button>Click Here to open notifications test page</button></a>
+     
+
+    
+
  
 
 <!-- Notification Web Socket -->
@@ -32,6 +38,8 @@
     // Socket On receive message Functionality
     socket.onmessage = function(e){
         console.log('message', e)
+        $("body").append("<h3>"+e.data+"</h3>")
+        // Can write any functionality based on your requirement
 
     }
 
