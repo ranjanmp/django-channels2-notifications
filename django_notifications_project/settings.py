@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django_notifications_app' # Django Notifications App
+    'channels', # Added channels to Installed Apps
 ]
 
 MIDDLEWARE = [
@@ -50,6 +53,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'django_notifications_project.urls'
+
+
+# Django Channels
+ASGI_APPLICATION = "django_notifications_project.routing.application"
+# End Django Channels
+
 
 TEMPLATES = [
     {
@@ -118,3 +127,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
+# Django Channels
+# Adding Django Channel Layers
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("localhost", 6379)],   # Change localhost to the ip in which you have redis server running on.
+        },
+    },
+}
+
+# End Django Channels
