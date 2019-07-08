@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django_notifications_app' # Django Notifications App (Your App Name)
+    'django_notifications_app', # Django Notifications App (Your App Name)
     'channels', # Added channels to Installed Apps
 ]
 
