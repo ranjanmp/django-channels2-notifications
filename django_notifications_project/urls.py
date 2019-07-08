@@ -18,8 +18,10 @@ from django.urls import path
 
 
 from django_notifications_app.views import home  # Importing basic home view 
+from django_notifications_app.views import notification_test_page  # Importing Notifications View
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", home, name="home"),
+    path("notifications-test/", notification_test_page, name="notifications-test"),
 ]
