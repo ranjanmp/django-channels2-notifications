@@ -21,6 +21,8 @@ Add 'channels' to the installed apps
 pip install channels-redis
 ```
 
+3. Install Redis and run the redis server
+
 ## in settings.py
 
 
