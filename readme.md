@@ -197,7 +197,7 @@ async_to_sync(channel_layer.group_send)(
 
 ```
 
-In this project, when the user logs in, a group is created in with the group name as the user's primary key. The notifications are sent to the respective group.
+In this project, when the user logs in, a group is created in with the group name as the user's primary key. The notifications are sent to the respective group. The notifications are sent to the respective group of which the user is part of.
 
 
 ## Contributing
