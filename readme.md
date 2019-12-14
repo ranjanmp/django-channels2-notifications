@@ -130,7 +130,7 @@ application = ProtocolTypeRouter({
 ```
 
 ### Connect to Websocket
-Add the below code in the template file (html) file, to connect to the websocket. Preferabally add this to the base.html and extend base.py in the other templates.
+Add the below code in the template file (html) file, to connect to the websocket. Preferabally add this to the base.html and extend base.html in the other templates.
 
 ```javascript
 
@@ -171,7 +171,7 @@ Add the below code in the template file (html) file, to connect to the websocket
 ```
 
 
-### Send notification to websocket
+### Send notification through websocket
 
 ```python
 # Django Channels
