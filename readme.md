@@ -1,6 +1,6 @@
 # Django Notifications Using Channels 2
 
-With ajax call we can have real time communication with the backend. But in Django, for backend to communicate with the frontend in real time we have Django Channels. Django Channels have been updated to version 2 and has a lot of improvements from the previous version. 
+Django Channels is a project that takes Django and extends its abilities beyond HTTP, to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI. Django Channels has been updated to version 2 and has a lot of improvements from the previous version. 
 
 This Article shows how to send realtime notifications to logged in users with Django Channels 2.
 
